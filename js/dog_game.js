@@ -2,13 +2,6 @@
 var x = 2;
 var y = 2;
 
-/*for(i=1;i<3;i++) {
-  x=document.getElementById("Data1"+i);
-  x.innerHTML=[Data1, Data2,Data3,Data4, Data5,Data6,Data7,Data8,Data9] />
-// Assuming your images are named [something]NUMBER.jpg
-// You could instead use an array
-}*/
-
 
 
 function fill(x, y, text) {
@@ -37,20 +30,6 @@ var array = _.shuffle(_.range(x,y));
       matches[i].innerHTML = array[i];
 
 }
-
-    /*for (i=0; i<=3; i++){
-      console.group("i: "+i);
-      console.log("i: " +i);
-    for (j=0; j<=3; j++){
-      console.log("j: " + j);
-      var number = 4*i+j+1;
-      if (number < 16){
-        fill(j,i,number);
-      }
-    }
-    console.groupEnd();
-  }*/
-
 
 
 
