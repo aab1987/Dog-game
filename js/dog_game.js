@@ -25,9 +25,62 @@ function read(x, y) {
 window.addEventListener("load",function(event){
   var matches=document.querySelectorAll("td");
 
-var array = _.shuffle(_.range(x,y));
+
+
+
+var imgArray = new Array;
+
+imgArray[0] = new Image();
+imgArray[0].src = 'img/1.jpg';
+
+imgArray[1] = new Image();
+imgArray[1].src = 'img/2.jpg';
+
+imgArray[2] = new Image();
+imgArray[2].src = 'img/3.jpg';
+
+imgArray[3] = new Image();
+imgArray[3].src = 'img/4.jpg';
+
+imgArray[4] = new Image();
+imgArray[4].src = 'img/5.jpg';
+
+imgArray[5] = new Image();
+imgArray[5].src = 'img/6.jpg';
+
+imgArray[6] = new Image();
+imgArray[6].src = 'img/7.jpg';
+
+imgArray[7] = new Image();
+imgArray[7].src = 'img/8.jpg';
+
+imgArray[8] = new Image();
+imgArray[8].src = 'img/9.jpg';
+
+
+
+/*function nextImage(element)
+{
+    var img = document.getElementById(element);
+
+    for(var i = 0; i < imgArray.length;i++)
+    {
+        if(imgArray[i].src == img.src)
+        {
+            if(i === imgArray.length){
+                document.getElementById(element).src = imgArray[0].src;
+                break;
+            }
+            document.getElementById(element).src = imgArray[i+1].src;
+            break;
+       }
+    }
+}*/
+
+
+var array = _.shuffle(_.range(1,8));
   for (var i=0; i < array.length; i++) {
-      matches[i].innerHTML = array[i];
+      matches[i].innerHTML = "<img src='img/" + array[i] + ".jpg'>";
 
 }
 
